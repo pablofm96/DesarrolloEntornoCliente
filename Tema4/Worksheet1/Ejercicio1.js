@@ -1,0 +1,3 @@
+function pulsar(){
+    alert("¡Funciona!");
+}
