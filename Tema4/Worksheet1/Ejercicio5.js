@@ -1,3 +1,6 @@
+window.onload = main();
+
+
 function mover(e){
     if (e.ctrlKey == true){
         e.target.style.backgroundColor="red";
@@ -28,5 +31,7 @@ function main(){
 
     document.getElementById("tabla").innerHTML = tabla;
 }
-
-
+document.addEventListener('keypress',  function(e){
+    if (e.keyCode === 84)
+        document.getElementById("tabla").remove();
+});
